@@ -1,11 +1,9 @@
 
 package jdbc01.tienda.entidades;
 
-/**
- *
- * @author Gonzalo Flores
- */
+
 public class Producto {
+    
     private int codigo;
     private String nombre;
     private double precio;
@@ -51,6 +49,11 @@ public class Producto {
 
     public void setCodigoFabricante(int codigoFabricante) {
         this.codigoFabricante = codigoFabricante;
+    }
+
+    @Override
+    public String toString() {
+        return "Producto{" + "codigo=" + codigo + ", nombre=" + nombre + ", precio=" + precio + ", codigoFabricante=" + codigoFabricante + '}';
     }
     
     

@@ -6,7 +6,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class DAO {
+
+
+
+public abstract class DAO {
 
     protected Connection conexion = null;
     protected Statement sentencia = null;
@@ -15,7 +18,7 @@ public class DAO {
     private final String USUARIO = "root";
     private final String PASSWORD = "root";
     private final String DATABASE = "tienda";
-    private final String DRIVER = "com.mysql.jdbc.driver";
+    private final String DRIVER = "com.mysql.jdbc.Driver";
 
     protected void conectarBase() throws ClassNotFoundException, SQLException {
         try {
